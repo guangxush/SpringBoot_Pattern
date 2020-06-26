@@ -13,8 +13,8 @@ public class ReduceRule extends Rule{
     private double maxNumber = 1.0;
 
     @Override
-    protected double play(double price) {
-        return price*randomBetween(minNumber, maxNumber);
+    public double play(double price) {
+        return price * randomBetween(minNumber, maxNumber);
     }
 
     private double randomBetween(double minNumber, double maxNumber)

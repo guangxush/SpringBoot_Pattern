@@ -12,7 +12,7 @@ public class RandomRule extends Rule {
     private double threshPrice;
 
     @Override
-    protected double play(double price) {
+    public double play(double price) {
         return price > threshPrice ? price - threshPrice : price;
     }
 

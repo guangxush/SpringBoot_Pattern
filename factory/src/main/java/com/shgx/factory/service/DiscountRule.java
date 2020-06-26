@@ -12,7 +12,7 @@ public class DiscountRule extends Rule {
     private double discountRate = 1.00;
 
     @Override
-    protected double play(double price) {
+    public double play(double price) {
         return price * discountRate > price ? price : price * discountRate;
     }
 

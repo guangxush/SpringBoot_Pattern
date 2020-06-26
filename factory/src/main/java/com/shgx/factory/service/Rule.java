@@ -12,6 +12,6 @@ public abstract class Rule {
      * 规则玩法
      * @return
      */
-    protected abstract double play(double price);
+    public abstract double play(double price);
 
 }
