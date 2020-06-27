@@ -41,6 +41,11 @@ public class RuleFactory {
         map.put("random", reduceRule);
     }
 
+    /**
+     * 工厂模式在于帮你创建对象，return对象Rule
+     * @param name
+     * @return
+     */
     public Rule fetchRule(String name) {
         return map.get(name);
     }
